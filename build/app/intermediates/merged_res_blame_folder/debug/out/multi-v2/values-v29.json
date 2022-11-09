@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v29/values-v29.xml",
+            "map": [
+                {
+                    "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/5e7843c38e353445397a81f62d468f35/jetified-ui-9.2.1/res/values-v29/values-v29.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "40",
+                        "endColumns": "12",
+                        "endOffsets": "2092"
+                    }
+                }
+            ]
+        }
+    ]
+}

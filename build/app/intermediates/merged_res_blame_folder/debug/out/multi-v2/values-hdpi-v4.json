@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/b04dca0713e71307c85c422423e4f320/jetified-twitter-core-3.1.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,116,168,226,285",
+                        "endColumns": "60,51,57,58,54",
+                        "endOffsets": "111,163,221,280,335"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "868,929,981,1039,1098",
+                        "endColumns": "60,51,57,58,54",
+                        "endOffsets": "924,976,1034,1093,1148"
+                    }
+                },
+                {
+                    "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/02350d18259de8acb9b21e467301b2aa/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1153",
+                        "endLines": "24",
+                        "endColumns": "13",
+                        "endOffsets": "1425"
+                    }
+                },
+                {
+                    "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/4490400d7d0924d49d1aa24911633685/jetified-carddrawer-2.18.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,116,171,227,280,338,420,499,557,612,668,725,798",
+                        "endColumns": "60,54,55,52,57,81,78,57,54,55,56,72,69",
+                        "endOffsets": "111,166,222,275,333,415,494,552,607,663,720,793,863"
+                    }
+                }
+            ]
+        }
+    ]
+}

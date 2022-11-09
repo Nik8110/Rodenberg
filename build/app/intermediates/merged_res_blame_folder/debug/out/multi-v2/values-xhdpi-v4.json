@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/b04dca0713e71307c85c422423e4f320/jetified-twitter-core-3.1.1/res/values-xhdpi-v4/values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "868",
+                        "endColumns": "54",
+                        "endOffsets": "918"
+                    }
+                },
+                {
+                    "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/4490400d7d0924d49d1aa24911633685/jetified-carddrawer-2.18.0/res/values-xhdpi-v4/values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,116,171,227,280,338,418,499,557,612,668,725,796",
+                        "endColumns": "60,54,55,52,57,79,80,57,54,55,56,70,71",
+                        "endOffsets": "111,166,222,275,333,413,494,552,607,663,720,791,863"
+                    }
+                }
+            ]
+        }
+    ]
+}

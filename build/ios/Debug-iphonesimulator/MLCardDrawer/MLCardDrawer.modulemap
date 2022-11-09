@@ -1,0 +1,12 @@
+module MLCardDrawer {
+  umbrella header "MLCardDrawer-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module MLCardDrawer.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/MLCardDrawer/Swift Compatibility Header/MLCardDrawer-Swift.h"
+  requires objc
+}

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.starn22.aketei"
+    android:versionCode="4"
+    android:versionName="4.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="33" />
+    <!--
+         Flutter needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <package android:name="com.instagram.android" /> <!-- Needs to be explicitly declared on Android R+ -->
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="android.app.Application"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/launcher_icon"
+        android:label="Starn 22"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAn6rQa36T-Gvos7dd7KtvwdGl0EU42axM" />
+
+        <activity
+            android:name="com.starn22.aketei.MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:windowSoftInputMode="adjustResize" >
+
+            <!--
+                 Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI.
+            -->
+
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.checkout.CheckoutActivity"
+            android:exported="true"
+            android:label=""
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="px"
+                    android:path="/one_tap"
+                    android:scheme="mercadopago" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="px"
+                    android:path="/one_tap"
+                    android:scheme="meli" />
+            </intent-filter>
+        </activity>
+        <!--
+             Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+        -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <service
+            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <provider
+            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+            android:authorities="com.starn22.aketei.flutter.image_provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/flutter_image_picker_file_paths" />
+        </provider>
+
+        <activity
+            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <provider
+            android:name="zhuoyuan.li.fluttershareme.util.ShareFileProvider"
+            android:authorities="com.starn22.aketei.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.payment_methods.PaymentMethodsActivity"
+            android:exported="false"
+            android:label="@string/px_title_activity_payment_methods"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.bank_deals.BankDealsActivity"
+            android:exported="false"
+            android:label="@string/px_title_activity_bank_deals"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.TermsAndConditionsActivity"
+            android:exported="false"
+            android:label="@string/px_title_activity_terms_and_conditions"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.guessing_card.GuessingCardActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.payment_vault.PaymentVaultActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.installments.InstallmentsActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.IssuersActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.cardvault.CardVaultActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.ErrorActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.payment_result.PaymentResultActivity"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.SecurityCodeActivity"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.PaymentTypesActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.review_payment_methods.ReviewPaymentMethodsActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.payer_information.PayerInformationActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.plugins.PaymentProcessorActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.business_result.BusinessPaymentResultActivity"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.review_and_confirm.ReviewAndConfirmActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.bank_deal_detail.BankDealDetailActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MercadoPagoTheme.NoActionBar" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.guessing_card.card_association_result.CardAssociationResultSuccessActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/ToolbarTransparentTheme" />
+        <activity
+            android:name="com.mercadopago.android.px.internal.features.guessing_card.card_association_result.CardAssociationResultErrorActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/ToolbarTransparentTheme" />
+
+        <provider
+            android:name="com.mercadopago.android.px.internal.di.PxCheckoutInitProvider"
+            android:authorities="com.starn22.aketei.px.provider"
+            android:exported="false" />
+
+        <activity
+            android:name="com.mercadolibre.android.cardform.presentation.ui.CardFormActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/CardFormStyle"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.mercadolibre.android.cardform.presentation.ui.CardFormWebActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/CardFormStyle"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.mercadolibre.android.ui.activities.LayoutUtilsActivity" >
+        </activity>
+        <activity android:name="com.mercadolibre.android.ui.activities.MLImageTestActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cct.com.starn22.aketei"
+                    android:scheme="fbconnect" />
+            </intent-filter>
+        </activity> <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.twitter.sdk.android.tweetui.PlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MediaTheme" />
+        <activity
+            android:name="com.twitter.sdk.android.tweetui.GalleryActivity"
+            android:theme="@style/MediaTheme" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.starn22.aketei.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+
+        <service
+            android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.starn22.aketei.com.squareup.picasso"
+            android:exported="false" />
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.starn22.aketei.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.twitter.sdk.android.core.identity.OAuthActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

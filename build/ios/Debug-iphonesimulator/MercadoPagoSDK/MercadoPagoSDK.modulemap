@@ -1,0 +1,12 @@
+module MercadoPagoSDK {
+  umbrella header "MercadoPagoSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module MercadoPagoSDK.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/MercadoPagoSDK/Swift Compatibility Header/MercadoPagoSDK-Swift.h"
+  requires objc
+}

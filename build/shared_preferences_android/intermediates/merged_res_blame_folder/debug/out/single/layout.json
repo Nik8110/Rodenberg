@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/248dfaa64160d820bdc4c6e47f24b986/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/248dfaa64160d820bdc4c6e47f24b986/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/248dfaa64160d820bdc4c6e47f24b986/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/248dfaa64160d820bdc4c6e47f24b986/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/shared_preferences_android/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/248dfaa64160d820bdc4c6e47f24b986/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/nikhil/Documents/client/pratik/Rodenberg/build/shared_preferences_android/intermediates/res/merged/debug/layout/custom_dialog.xml",
+        "source": "/Users/nikhil/.gradle/caches/transforms-2/files-2.1/248dfaa64160d820bdc4c6e47f24b986/core-1.6.0/res/layout/custom_dialog.xml"
+    }
+]

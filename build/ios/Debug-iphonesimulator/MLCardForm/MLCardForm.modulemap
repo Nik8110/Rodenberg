@@ -1,0 +1,12 @@
+module MLCardForm {
+  umbrella header "MLCardForm-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module MLCardForm.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/MLCardForm/Swift Compatibility Header/MLCardForm-Swift.h"
+  requires objc
+}

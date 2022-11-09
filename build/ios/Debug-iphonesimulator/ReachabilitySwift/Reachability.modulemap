@@ -1,0 +1,12 @@
+module Reachability {
+  umbrella header "ReachabilitySwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module Reachability.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/ReachabilitySwift/Swift Compatibility Header/Reachability-Swift.h"
+  requires objc
+}

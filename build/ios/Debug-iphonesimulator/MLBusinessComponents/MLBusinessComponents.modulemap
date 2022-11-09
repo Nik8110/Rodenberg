@@ -1,0 +1,12 @@
+module MLBusinessComponents {
+  umbrella header "MLBusinessComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module MLBusinessComponents.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/MLBusinessComponents/Swift Compatibility Header/MLBusinessComponents-Swift.h"
+  requires objc
+}

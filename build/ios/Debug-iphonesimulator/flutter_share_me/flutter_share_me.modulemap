@@ -1,0 +1,12 @@
+module flutter_share_me {
+  umbrella header "flutter_share_me-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module flutter_share_me.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/flutter_share_me/Swift Compatibility Header/flutter_share_me-Swift.h"
+  requires objc
+}

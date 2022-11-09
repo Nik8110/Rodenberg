@@ -1,0 +1,12 @@
+module connectivity_plus {
+  umbrella header "connectivity_plus-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module connectivity_plus.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/connectivity_plus/Swift Compatibility Header/connectivity_plus-Swift.h"
+  requires objc
+}

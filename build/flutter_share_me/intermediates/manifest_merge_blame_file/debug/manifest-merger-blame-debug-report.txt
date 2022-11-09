@@ -1,0 +1,43 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="zhuoyuan.li.fluttershareme" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.INTERNET" />
+7-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:4:5-67
+7-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:4:22-64
+8    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+8-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:5:5-80
+8-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:5:22-78
+9
+10    <queries>
+10-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:6:5-8:15
+11        <package android:name="com.instagram.android" />
+11-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:7:9-57
+11-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:7:18-54
+12    </queries>
+13
+14    <application>
+14-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:9:5-19:19
+15        <provider
+15-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:10:9-18:20
+16            android:name="zhuoyuan.li.fluttershareme.util.ShareFileProvider"
+16-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:11:13-51
+17            android:authorities="${applicationId}.provider"
+17-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:12:13-60
+18            android:exported="false"
+18-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:13:13-37
+19            android:grantUriPermissions="true" >
+19-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:14:13-47
+20            <meta-data
+20-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:15:13-17:54
+21                android:name="android.support.FILE_PROVIDER_PATHS"
+21-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:16:17-67
+22                android:resource="@xml/file_paths" />
+22-->/Users/nikhil/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share_me-1.4.0/android/src/main/AndroidManifest.xml:17:17-51
+23        </provider>
+24    </application>
+25
+26</manifest>

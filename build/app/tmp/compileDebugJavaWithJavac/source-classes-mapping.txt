@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/starn22/aketei/MainActivity.java
+ com.starn22.aketei.MainActivity
+com/starn22/aketei/BuildConfig.java
+ com.starn22.aketei.BuildConfig

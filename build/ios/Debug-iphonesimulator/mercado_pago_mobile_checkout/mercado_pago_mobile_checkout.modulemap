@@ -1,0 +1,12 @@
+module mercado_pago_mobile_checkout {
+  umbrella header "mercado_pago_mobile_checkout-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module mercado_pago_mobile_checkout.Swift {
+  header "/Users/nikhil/Documents/client/pratik/Rodenberg/build/ios/Debug-iphonesimulator/mercado_pago_mobile_checkout/Swift Compatibility Header/mercado_pago_mobile_checkout-Swift.h"
+  requires objc
+}
